@@ -1,16 +1,17 @@
+
 import React, { useState, useMemo, useEffect } from 'react';
-import { AppStep, EggType, CookingMethod, DonenessOption } from './types';
-import { COOKING_DATA } from './constants';
-import SelectionCard from './components/SelectionCard';
-import TimerDisplay from './components/TimerDisplay';
-import TipsPage from './components/TipsPage';
-import BoiledEggIcon from './components/icons/BoiledEggIcon';
-import FriedEggIcon from './components/icons/FriedEggIcon';
-import OmeletIcon from './components/icons/OmeletIcon';
-import StoveIcon from './components/icons/StoveIcon';
-import HeaterIcon from './components/icons/HeaterIcon';
-import ChevronLeftIcon from './components/icons/ChevronLeftIcon';
-import TipsIcon from './components/icons/TipsIcon';
+import { AppStep, EggType, CookingMethod, DonenessOption } from './types.ts';
+import { COOKING_DATA } from './constants.ts';
+import SelectionCard from './components/SelectionCard.tsx';
+import TimerDisplay from './components/TimerDisplay.tsx';
+import TipsPage from './components/TipsPage.tsx';
+import BoiledEggIcon from './components/icons/BoiledEggIcon.tsx';
+import FriedEggIcon from './components/icons/FriedEggIcon.tsx';
+import OmeletIcon from './components/icons/OmeletIcon.tsx';
+import StoveIcon from './components/icons/StoveIcon.tsx';
+import HeaterIcon from './components/icons/HeaterIcon.tsx';
+import ChevronLeftIcon from './components/icons/ChevronLeftIcon.tsx';
+import TipsIcon from './components/icons/TipsIcon.tsx';
 
 const getInitialTheme = (): 'dark' | 'light' => {
   if (typeof window !== 'undefined' && window.localStorage) {

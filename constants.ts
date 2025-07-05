@@ -1,5 +1,6 @@
 
-import { CookingData } from './types';
+
+import { CookingData } from './types.ts';
 
 export const COOKING_DATA: CookingData = {
   'Boiled': [
