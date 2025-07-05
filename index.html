@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" id="theme-color-meta" content="#ffffff" />
+    <title>Perfect Egg Timer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['VT323', 'monospace'],
+            },
+            colors: {
+              'brand-bg-light': '#ffffff',
+              'brand-text-light': '#1f2937',
+              'brand-primary-light': '#facc15', // yellow-400
+              'brand-surface-light': '#f9fafb', // gray-50
+
+              'brand-bg-dark': '#374151', // gray-700
+              'brand-text-dark': '#f9fafb', // gray-50
+              'brand-primary-dark': '#facc15', // yellow-400
+              'brand-surface-dark': '#4b5563', // gray-600
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-in-out',
+              'fold-omelet': 'foldOmelet 1.2s ease-in-out forwards',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              foldOmelet: {
+                '0%': { transform: 'rotateX(0deg)' },
+                '100%': { transform: 'rotateX(-180deg)' },
+              },
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'VT323', 'monospace';
+        -webkit-tap-highlight-color: transparent;
+        font-size: 1.1rem;
+        letter-spacing: 0.05em;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-brand-bg-light dark:bg-brand-bg-dark transition-colors duration-300">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "name": "Perfect Egg Timer",
+  "description": "A simple, mobile-friendly web app to help you cook perfect eggs every time. Choose your egg type, cooking method, and desired doneness to start a precise timer.",
+  "requestFramePermissions": []
+}
