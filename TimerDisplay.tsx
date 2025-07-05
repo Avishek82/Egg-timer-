@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect, useMemo } from 'react';
-import RestartIcon from './icons/RestartIcon.tsx';
-import { EggType, DonenessOption } from '../types.ts';
+import RestartIcon from './RestartIcon.tsx';
+import { EggType, DonenessOption } from './types.ts';
 import EggCookingAnimation from './EggCookingAnimation.tsx';
 
 interface TimerDisplayProps {

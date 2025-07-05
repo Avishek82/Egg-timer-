@@ -2,16 +2,16 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { AppStep, EggType, CookingMethod, DonenessOption } from './types.ts';
 import { COOKING_DATA } from './constants.ts';
-import SelectionCard from './components/SelectionCard.tsx';
-import TimerDisplay from './components/TimerDisplay.tsx';
-import TipsPage from './components/TipsPage.tsx';
-import BoiledEggIcon from './components/icons/BoiledEggIcon.tsx';
-import FriedEggIcon from './components/icons/FriedEggIcon.tsx';
-import OmeletIcon from './components/icons/OmeletIcon.tsx';
-import StoveIcon from './components/icons/StoveIcon.tsx';
-import HeaterIcon from './components/icons/HeaterIcon.tsx';
-import ChevronLeftIcon from './components/icons/ChevronLeftIcon.tsx';
-import TipsIcon from './components/icons/TipsIcon.tsx';
+import SelectionCard from './SelectionCard.tsx';
+import TimerDisplay from './TimerDisplay.tsx';
+import TipsPage from './TipsPage.tsx';
+import BoiledEggIcon from './BoiledEggIcon.tsx';
+import FriedEggIcon from './FriedEggIcon.tsx';
+import OmeletIcon from './OmeletIcon.tsx';
+import StoveIcon from './StoveIcon.tsx';
+import HeaterIcon from './HeaterIcon.tsx';
+import ChevronLeftIcon from './ChevronLeftIcon.tsx';
+import TipsIcon from './TipsIcon.tsx';
 
 const getInitialTheme = (): 'dark' | 'light' => {
   if (typeof window !== 'undefined' && window.localStorage) {

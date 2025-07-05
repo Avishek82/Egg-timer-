@@ -1,6 +1,6 @@
 
 import React from 'react';
-import ChevronLeftIcon from './icons/ChevronLeftIcon.tsx';
+import ChevronLeftIcon from './ChevronLeftIcon.tsx';
 
 interface TipsPageProps {
   onBack: () => void;

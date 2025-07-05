@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { EggType, DonenessOption } from '../types.ts';
+import { EggType, DonenessOption } from './types.ts';
 
 interface EggCookingAnimationProps {
   eggType: EggType;
